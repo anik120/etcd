@@ -1,0 +1,98 @@
+"bundles": [
+    {
+        "path": "quay.io/operatorhubio/etcd:v0.6.1",
+        "version": "0.6.1",
+        "olm.package": {
+            "packageName": "etcd",
+            "version": "0.6.1",
+        },
+        "olm.gvk": {
+            "group":"etcd.database.coreos.com",
+            "kind":"EtcdCluster",
+            "version":"v1beta2"
+        },
+        "channels": [
+            "alpha"
+        ],
+    },
+    {
+        "path": "quay.io/operatorhubio/etcd:v0.9.0",
+        "version": "0.9.0",
+        "olm.package": {
+            "packageName": "etcd",
+            "version": "0.9.0",
+        },
+        "olm.gvk": {
+            "group":"etcd.database.coreos.com",
+            "kind":"EtcdBackup",
+            "version":"v1beta2"
+        },
+        "channels": [
+            "singlenamespace-alpha", "clusterwide-alpha"
+        ],
+    },
+    {
+        "path": "quay.io/operatorhubio/etcd:v0.9.2",
+        "version": "0.9.2",
+        "olm.package": {
+            "packageName": "etcd",
+            "version": "0.9.2",
+        },
+        "olm.gvk": {
+            "group":"etcd.database.coreos.com",
+            "kind":"EtcdRestore",
+            "version":"v1beta2"
+        },
+        "channels": [
+            "singlenamespace-alpha"
+        ],
+    },
+    {
+        "path": "quay.io/operatorhubio/etcd:v0.9.2-clusterwide",
+        "version": "0.9.2-clusterwide",
+        "olm.package": {
+            "packageName": "etcd",
+            "version": "0.9.2-clusterwide",
+        },
+        "olm.gvk": {
+            "group":"etcd.database.coreos.com",
+            "kind":"EtcdBackup",
+            "version":"v1beta2"
+        },
+        "channels": [
+            "clusterwide-alpha"
+        ],
+    },
+    {
+        "path": "quay.io/operatorhubio/etcd:v0.9.4",
+        "version": "0.9.4",
+        "olm.package": {
+            "packageName": "etcd",
+            "version": "0.9.2-clusterwide",
+        },
+        "olm.gvk": {
+            "group":"etcd.database.coreos.com",
+            "kind":"EtcdBackup",
+            "version":"v1beta2"
+        },
+        "channels": [
+            "singlenamespace-alpha"
+        ],
+    },
+    {
+        "path": "quay.io/operatorhubio/etcd:v0.9.4-clusterwide",
+        "version": "0.9.4-clusterwide",
+        "olm.package": {
+            "packageName": "etcd",
+            "version": "0.9.4-clusterwide",
+        },
+        "olm.gvk": {
+            "group":"etcd.database.coreos.com",
+            "kind":"EtcdBackup",
+            "version":"v1beta2"
+        },
+        "channels": [
+            "clusterwide-alpha"
+        ],
+    },
+],

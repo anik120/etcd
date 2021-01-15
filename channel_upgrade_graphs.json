@@ -1,0 +1,67 @@
+"channelUpgradeGraphs": {
+    "channels": [
+        {
+            "name": "alpha",
+            "upgrades": [
+                {
+                    "to": {
+                        "bundle": "quay.io/mynamespace/etcdoperator-community.v0.6.1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "clusterwide-alpha",
+            "upgrades": [
+                {
+                    "to": {
+                        "bundle": "quay.io/operatorhubio/etcd:v0.9.0"
+                    }
+                },
+                {
+                    "to": {
+                        "bundle": "quay.io/mynamespace/etcdoperator.v0.9.2-clusterwide"
+                    },
+                    "from": {
+                        "bundles": ["quay.io/mynamespace/etcdoperator.v0.9.0"]
+                        // "skiprange": >=0.9.0 <0.9.2  // an example of skiprange if skiprange was specified for this bundle
+                    }
+                },
+                {
+                    "to": {
+                        "bundle": "quay.io/mynamespace/etcdoperator.v0.9.4-clusterwide"
+                    },
+                    "from": {
+                        "bundles": ["quay.io/mynamespace/etcdoperator.v0.9.2-clusterwide"]
+                    }
+                },
+            ]
+        },
+        {
+            "name": "singlenamespace-alpha",
+            "upgrades": [
+                {
+                    "to": {
+                        "bundle": "quay.io/operatorhubio/etcd:v0.9.0"
+                    }
+                },
+                {
+                    "to": {
+                        "bundle": "quay.io/mynamespace/etcdoperator.v0.9.2"
+                    },
+                    "from": {
+                        "bundles": ["quay.io/mynamespace/etcdoperator.v0.9.0"]
+                    }
+                },
+                {
+                    "to": {
+                        "bundle": "quay.io/mynamespace/etcdoperator.v0.9.4"
+                    },
+                    "from": {
+                        "bundles": ["quay.io/mynamespace/etcdoperator.v0.9.2"]
+                    }
+                },
+            ]
+        },
+    ]
+}
